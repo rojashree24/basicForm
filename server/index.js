@@ -11,7 +11,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-app.get("/api/user", userRoute);
+app.use("/api/user", userRoute);
 
 mongoose.set("strictQuery", true);
 mongoose
