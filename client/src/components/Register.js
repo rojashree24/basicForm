@@ -14,7 +14,7 @@ const Register = () => {
 
       const user = { fname,lname,email,gender,phno };
 
-      const response = await fetch("/api/user", {
+      const response = await fetch("/api/user/register", {
         method: "POST",
         body: JSON.stringify(user),
         headers: {
@@ -35,7 +35,7 @@ const Register = () => {
         setGender("")
         setPhno("")
         setError(null);
-        console.log("new workout added", json);
+        console.log("new user added", json);
       }
     };
 
