@@ -1,13 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router } from "react-router-dom";
+// import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
-import AllRoutes from './AllRoutes'
+import Register from './components/Register'
 
 const App = () => {
   return (
-    <Router>
-        <AllRoutes/>
-    </Router>
+    <>
+        
+        <Register/>
+        
+    </>
   )
 }
 
